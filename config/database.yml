@@ -22,7 +22,11 @@ default: &default
 development:
   <<: *default
   database: blog_rails_development
-  username: msa
+  host: localhost
+  username: postgres
+  password: Pas4all@1
+  port: 5432
+  
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -57,7 +61,10 @@ development:
 test:
   <<: *default
   database: blog_rails_test
-  username: msa
+  host: localhost
+  username: postgres
+  password: Pas4all@1
+  port: 5432
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
